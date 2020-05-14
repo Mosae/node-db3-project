@@ -11,5 +11,10 @@ where orders.OrderDate
 
 
 -- Display the name and quantity of the products ordered in order with Id 10251. Sort by ProductName. Shows 3 records.
-
+SELECT ProductName, OrderId, Unit FROM [Products]
+JOIN Orders
+Where OrderId is 10251
+order by ProductName
 -- Display the OrderID, Customer's Company Name and the employee's LastName for every order. All columns should be labeled clearly. Displays 16,789 records.
+SELECT OrderID, CustomerName, LastName FROM [Orders]
+JOIN Customers, Employees

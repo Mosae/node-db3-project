@@ -1,6 +1,6 @@
 // Update with your config settings.
 const connectionString =
-	process.env.DATABASE_URL || 'postgresql://luis:pass@localhost/blog';
+	process.env.DATABASE_URL || 'postgresql:Mosae/northwind.db3';
 
 module.exports = {
 	development: {

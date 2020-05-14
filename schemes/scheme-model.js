@@ -9,7 +9,7 @@ module.exports = {
 };
 
 function all() {
-	return db('schemes');
+	return db('schemes as s').join('products');
 }
 
 function findById(id) {

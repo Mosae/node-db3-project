@@ -18,7 +18,7 @@ function findById(id) {
 	return db('schemes').where({ id }).first();
 }
 
-function findSteps() {
+function findSteps(id) {
 	return db('steps as st')
 		.where('scheme_id', id)
 		.join('schemes as sc', 'st.scheme_id', '=', 'sc.id')
@@ -42,7 +42,7 @@ function addStep(stepData, id) {
 		});
 }
 
-function update(id, changes) {
+function update(changes, id) {
 	return db('schemes as sc')
 		.where({ id }) //{id} where get whole project
 		.update(changes)

@@ -1,6 +1,4 @@
 // Update with your config settings.
-// const connectionString =
-// 	process.env.DATABASE_URL || 'postgresql:Mosae/northwind.db3';
 
 module.exports = {
 	development: {
@@ -24,32 +22,3 @@ module.exports = {
 		},
 	},
 };
-// 	staging: {
-// 		client: 'pg',
-// 		connection: {
-// 			host: 'localhost', // add this
-// 			database: 'my_db',
-// 			user: 'username',
-// 			password: 'password',
-// 		},
-// 		pool: {
-// 			min: 2,
-// 			max: 10,
-// 		},
-// 		migrations: {
-// 			directory: './data/migrations',
-// 		},
-// 	},
-
-// 	production: {
-// 		client: 'pg', // remember to npm i pg
-// 		connection: connectionString,
-// 		pool: {
-// 			min: 2,
-// 			max: 10,
-// 		},
-// 		migrations: {
-// 			directory: './data/migrations',
-// 		},
-// 	},
-// };
